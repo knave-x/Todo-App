@@ -12,8 +12,13 @@ const App = () => {
       <header>
         <h1>Batu's Todo List</h1>
       </header>
-      <Form inputText={inputText} todos={todos} setInputText={setInputText} />
-      <TodoList />
+      <Form
+        inputText={inputText}
+        todos={todos}
+        setInputText={setInputText}
+        setTodos={setTodos}
+      />
+      <TodoList setTodos={setTodos} todos={todos} />
     </div>
   );
 };
